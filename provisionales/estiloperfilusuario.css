@@ -1,0 +1,164 @@
+/*estilo para el perfil de los usuarios*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 10%;
+    padding: 2%;
+    background-color: #f0f0f0;
+}
+
+.section-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-img {
+    width: 50%;
+    flex-basis: 50%; /* Establecer la base del tamaño del elemento al 50% del contenedor */
+}
+
+.header-img img {
+    max-width: 100%; /* Ajustar el ancho máximo de la imagen al tamaño del contenedor */
+    height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+    border-radius: 15px;
+}
+
+h1, h2 {/*estilo de los h1 y h2*/
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {/*cambia al pasar el ratón por encima*/
+    text-decoration: underline;
+}
+
+input[type="text"],/*Dar estilo a formularios*/
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+
+#recordatorios p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#solicitudes_pendientes p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#solicitudes_pendientes button {
+    background-color: #007bff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#lista_amigos p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#lista_amigos a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#lista_amigos a:hover {
+    text-decoration: underline;
+}
+
+#form_agregar_amigo input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#form_agregar_amigo input[type="submit"] {
+    background-color: #007bff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat_window {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+}
+
+#chat_window p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#chat_window input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#chat_window input[type="submit"] {
+    background-color: #007bff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Estilos específicos para dispositivos móviles */
+
+@media (max-width: 600px) {
+    #form_agregar_amigo input[type="text"] {
+        width: 100%;
+    }
+}

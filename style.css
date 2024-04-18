@@ -1,0 +1,362 @@
+/*estilo para index.php*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1px 19px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 5px 19px; /* Reducir el padding para acercar el menú a la cabecera */
+}
+
+.menu .nave ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .nave ul li a {
+    font-size: 20px;
+    padding: 10px 19px;
+    color: black;
+    display: block;
+}
+
+.menu .nave ul li a:hover {
+    color: blueviolet;
+}
+
+.logo {
+    font-size: 24px;
+    color: aqua;
+    text-transform: uppercase;
+}
+
+.menu label {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos en el espacio disponible */
+    margin-top: 50px;
+    margin-block: 50px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.header-txt {
+    width: 50%;
+    flex-basis: 50%; /* Establece la base del tamaño del elemento al 50% del contenedor */
+    padding-right: 20px; /* Agrega espacio entre el texto y la imagen */
+}
+
+.header-img {
+    width: 50%;
+    flex-basis: 50%; /* Establece la base del tamaño del elemento al 50% del contenedor */
+}
+
+.header-img img {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    height: auto; /* Esto permite que la altura se ajuste automáticamente en proporción al ancho */
+    border-radius: 15px;
+}
+
+.header-txt h1 {
+    line-height: 1;
+    color: black;
+    text-transform: uppercase;
+    font-size: 74px;
+    margin-bottom: 10px;
+}
+
+.header-txt p {
+    font-size: 15px;
+    color: rgb(42, 87, 133);
+    margin-bottom: 44px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: aqua;
+    color: black;
+    border-radius: 14px;
+}
+
+.about {
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan cuando no haya suficiente espacio */
+    justify-content: center; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+}
+
+.about-img {
+    width: 50%;
+    flex-basis: 50%; /* Establece la base del tamaño del elemento al 50% del contenedor */
+}
+
+.about-img img {
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    height: auto; /* Esto permite que la altura se ajuste automáticamente en proporción al ancho */
+    border-radius: 15px;
+}
+
+.about-txt {
+    width: 50%;
+    flex-basis: 50%; /* Establece la base del tamaño del elemento al 50% del contenedor */
+    margin-left: 25px;
+}
+
+.about-txt h2 {
+    color: dimgrey;
+    font-size: 49px;
+    margin-bottom: 14px;
+}
+
+.about-txt p {
+    font-size: 15px;
+    color: rgb(42, 87, 133);
+    margin-bottom: 44px;
+}
+
+.Servicios {
+    padding: 49px 0 99px 0;
+    text-align: center;
+    background-color: beige;
+}
+
+.Servicios h2 {
+    color: dimgrey;
+    font-size: 49px;
+    margin-bottom: 14px;
+}
+
+.Servicios-content {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Servicio-1 {
+    padding: 14px;
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.2);
+    flex-basis: calc(24% - 19px);
+}
+
+.Servicio-1 i {
+    font-size: 29px;
+    color: rgb(3, 55, 151);
+    margin-bottom: 14px;
+}
+
+.Servicio-1 h3 {
+    font-size: 19px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.formulario {
+    margin-top: 99px;
+    margin-bottom: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 49px;
+    width: 499px;
+    text-align: center;
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.3);
+}
+
+form h2 {
+    font-size: 24px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container > i {
+    padding: 13px;
+    border-radius: 49px;
+    background-color: aqua;
+    color: rgb(46, 40, 40);
+    position: absolute;
+    font-size: 19px;
+    top: 5px;
+    left: 5px;
+}
+
+.input-container > input, textarea {
+    padding: 16px 14px 16px 64px;
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 34px;
+    background-color: transparent;
+    border: 2px solid aqua;
+    font-size: 15px;
+    outline: none;
+    color: rgb(46, 40, 40);
+}
+
+.btn {
+    background-color: aqua;
+    padding: 16px 29px;
+    width: 99%;
+    border: 0;
+    box-shadow: 0 0 19px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 49px;
+    background-color: beige;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link ul li {
+    margin-right: 49px;
+}
+
+.link ul li a {
+    color: black;
+    font-size: 16px;
+}
+
+.link ul li a:hover {
+    color: blueviolet;
+}
+
+@media (max-width:990px) {
+
+    .menu {
+        padding: 19px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .nave {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: beige;
+        display: none;
+    }
+
+    .menu .nave ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .nave {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 79px 29px 49px 29px;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+    .about {
+        padding: 29%;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-txt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .footer {
+        padding: 29px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul {
+        flex-direction: column;
+    }
+
+    .link ul li {
+        margin: 0 0 14px 0;
+    }
+
+}
